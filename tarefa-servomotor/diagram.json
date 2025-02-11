@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "author": "Kauan Souza Teles",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 7.6, "left": 182.4, "attrs": {} },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 100,
+      "left": -114.1,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 196.8,
+      "left": -125.35,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GND.8", "servo1:GND", "black", [ "h0" ] ],
+    [ "servo1:V+", "pico:3V3", "red", [ "h-96", "v-19.1" ] ],
+    [ "servo1:PWM", "pico:GP22", "blue", [ "h-76.8", "v38.6" ] ],
+    [ "rgb1:R", "pico:GP12", "red", [ "v0" ] ],
+    [ "rgb1:G", "pico:GP13", "green", [ "v0" ] ],
+    [ "rgb1:B", "pico:GP14", "blue", [ "v0" ] ],
+    [ "r1:1", "rgb1:COM", "black", [ "h0" ] ],
+    [ "r1:2", "pico:GND.4", "black", [ "h86.4", "v-58.8" ] ]
+  ],
+  "dependencies": {}
+}
