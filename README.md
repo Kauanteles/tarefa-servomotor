@@ -21,7 +21,7 @@ Para utilizar o software, siga os seguintes passos:
 A partir daqui, o firmware já estará pronto para uso.
 
 ## Execução no ambiente de simulação Wokwi
-(Para a parte simulada que usa o servomotor tenha certeza que o valor de '#define PIN_MOTOR --' é 22) 
+(Para a parte simulada que usa o servomotor tenha certeza que o valor de '#define PIN_MOTOR' é 22) 
 
 Para utilizar o ***firmware*** no ambiente de simulação, basta ter a extensão do **Wokwi** instalada no seu ***VSCode***, além de ter configurado a sua licença.
 
@@ -30,7 +30,7 @@ Suprindo os requisitos citados acima, basta clicar no arquivo ``diagram.json``, 
 ***Clique no botão de play, no canto superior esquerdo e simule!***
 
 ## Execução no *Raspberry Pi Pico*
-(Esta parte é somente caso o valor de '#define PIN_MOTOR --' seja 12 assim usando o led ao inves do servomotor)
+(Esta parte é somente caso o valor de '#define PIN_MOTOR' seja 12 assim usando o led ao inves do servomotor na bitdoglab como é pedido)
 
 - **1°:** Coloque o seu ***Raspberry Pi Pico*** em modo ***BOOTSEL***, segurando o botão BOOTSEL enquanto conecta a placa ao computador.
 
