@@ -30,7 +30,7 @@ Suprindo os requisitos citados acima, basta clicar no arquivo ``diagram.json``, 
 ***Clique no botão de play, no canto superior esquerdo e simule!***
 
 ## Execução no *Raspberry Pi Pico*
-(Esta parte é somente caso o valor de '#define PIN_MOTOR' seja 12 assim usando o led ao inves do servomotor na bitdoglab como é pedido)
+## (Esta parte é somente caso o valor de '#define PIN_MOTOR' seja 12 assim usando o led ao inves do servomotor na bitdoglab como é pedido)
 
 - **1°:** Coloque o seu ***Raspberry Pi Pico*** em modo ***BOOTSEL***, segurando o botão BOOTSEL enquanto conecta a placa ao computador.
 
